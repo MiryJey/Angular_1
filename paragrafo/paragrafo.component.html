@@ -1,0 +1,7 @@
+<div *ngIf="mostra; else noShow"> Questo paragrafo verrà mostrato</div>
+
+<ng-template #noShow>
+    Ho cambiato paragrafo
+</ng-template>
+
+<button (click)="mostra = !mostra">Clicca per cambiare contenuto</button>
