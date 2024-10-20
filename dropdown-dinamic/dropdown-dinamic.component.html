@@ -1,0 +1,15 @@
+<div class = "select-ngFor">
+    
+    <select [(ngModel)]="paeseSelezionato">
+
+        <option *ngFor="let nazione of paesi">
+        {{nazione.nome}}
+        </option>
+
+    </select>
+
+    <div>
+        <h2>La tua scelta è : {{paeseSelezionato}}</h2>
+    </div>
+
+</div>
