@@ -1,2 +1,7 @@
-<!-- <div *ngIf="isShow"> Il contenuto è visualizzato se la condizione è true </div> -->
-<div *ngIf="noShow"> Il contenuto è visualizzato se la condizione è true </div>
+ <div *ngIf="isShow; else isFalse"> Il contenuto è visualizzato se la condizione è true </div> 
+<!-- <div *ngIf="noShow"> Il contenuto è visualizzato se la condizione è true </div> -->
+ <ng-template #isFalse>
+    Il contenuto è visualizzato se la condizione non è true ma false.
+</ng-template>
+
+<button (click) ="isShow = !isShow" >Cliccami</button>
