@@ -1,0 +1,7 @@
+<div *ngIf="show; else noShow">
+   Caricamento....
+</div>
+<ng-template #noShow >Variabile false.</ng-template>
+
+
+<button (click)="this.show = !this.show">Cliccami</button>
